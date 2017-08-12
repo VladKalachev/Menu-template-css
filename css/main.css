@@ -328,9 +328,30 @@ body{
     height: 100%;
 }
 
+nav input{
+    display: none;
+}
+nav label{
+    padding: 10px 15px;
+    color: #fff;
+    display: none;
+}
+
 @media ( max-width: 670px) {
-    .menuToggle{
+    nav label{
         display: block;
+    }
+
+    #menuToggle:checked + .menu{
+        display: block;
+        position: absolute;
+        background: #4c3167;
+        width: 100%;
+        margin-left: -30px;
+        padding-left: 28px;
+    }
+    .menu li{
+        float: none;
     }
     .menu{
         display: none;
