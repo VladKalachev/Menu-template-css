@@ -288,23 +288,52 @@ html{
 
 .menu{
     list-style-type: none;
-    margin: 0;
-    line-height: 50px;
-    color: #fff;
+    margin: 0; 
+    padding: 0;
+}
+nav{
     background: #4c3167;
 }
 .menu li{
     float: left;
-    padding-right: 20px;
+}
+.menu li a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
 }
 
+section{
+    padding-top: 10px;
+}
+
+.wrapper{
+    max-width: 1024px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
 .b-content{
-    padding: 16px 40px;
     height: 100%;
     background: #c1aaff;
     color: #000;
-    min-height: 100%;
-    position: absolute;
+}
+.menuToggle{
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+body{
+    height: 100%;
 }
 
+@media ( max-width: 670px) {
+    .menuToggle{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+}
 
