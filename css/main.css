@@ -280,3 +280,31 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+html{
+    height: 100%;
+    font-size: 18px;
+}
+
+.menu{
+    list-style-type: none;
+    margin: 0;
+    line-height: 50px;
+    color: #fff;
+    background: #4c3167;
+}
+.menu li{
+    float: left;
+    padding-right: 20px;
+}
+
+.b-content{
+    padding: 16px 40px;
+    height: 100%;
+    background: #c1aaff;
+    color: #000;
+    min-height: 100%;
+    position: absolute;
+}
+
+
