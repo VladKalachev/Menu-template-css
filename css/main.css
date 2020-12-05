@@ -1,91 +1,81 @@
-html {
-    color: #222;
-    line-height: 1.4;
-    height: 100%;
-    font-size: 18px;
+html, body, section {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  height: 100%;
 }
 
-body {
-    height: 100%; 
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
+nav{
+  background: #4c3167;
 }
 
 .menu{
-    list-style-type: none;
-    margin: 0; 
-    padding: 0;
+  list-style-type: none;
+  margin: 0; 
+  padding: 0;
 }
-nav{
-    background: #4c3167;
-}
+
 .menu li{
-    float: left;
+  display: inline-block;
 }
+
 .menu li a {
-    display: inline-block;
-    padding: 10px 15px;
-    color: #fff;
-    text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
 }
 
 section{
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .wrapper{
-    max-width: 1024px;
-    padding: 0 30px;
-    margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 30px;
+  margin: 0 auto;
 }
 .content{
-    height: 100%;
-    background: #c1aaff;
-    color: #000;
+  height: 100%;
+  background: #c1aaff;
+  color: #000;
 }
+
 .menuToggle{
-    padding: 10px 15px;
-    cursor: pointer;
-    color: #fff;
-    display: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
 }
 
 nav input{
-    display: none;
+  display: none;
 }
 
 nav label{
-    padding: 10px 15px;
-    color: #fff;
-    display: none;
+  padding: 10px 15px;
+  color: #fff;
+  display: none;
 }
 
 @media ( max-width: 670px) {
-    nav label{
-        display: block;
-    }
+  nav label{
+      display: block;
+  }
 
-    #menuToggle:checked + .menu{
-        display: block;
-        position: absolute;
-        background: #4c3167;
-        width: 100%;
-        margin-left: -30px;
-        padding-left: 28px;
-    }
-    .menu li{
-        float: none;
-    }
-    .menu{
-        display: none;
-    }
+  #menuToggle:checked + .menu{
+    display: block;
+    position: absolute;
+    background: #4c3167;
+    width: 100%;
+    margin-left: -30px;
+    padding-left: 28px;
+  }
+  .menu li{
+    display: block;
+  }
+  .menu{
+    display: none;
+  }
 }
 
